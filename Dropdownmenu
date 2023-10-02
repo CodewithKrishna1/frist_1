@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- <link rel="stylesheet" href="./dropdown.css"> -->
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(239, 239, 239);
+    height: 4rem;
+    padding: 0 2rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    display: inline-block;
+    position: relative;
+}
+
+ul li a {
+    display: block;
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 1rem;
+}
+
+.dropdown li a {
+    color: white;
+}
+
+.dropdown {
+    width: 180%;
+    background: rgb(0, 40, 95);
+    position: absolute;
+    display: none;
+}
+
+.dropdown li {
+    display: block;
+}
+
+.dropdown li a:hover {
+    color: blue;
+}
+
+ul li a:hover {
+    color: blue;
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+}
+</style>
+</head>
+
+
+<body>
+  <div class="navbar-container">  
+    <ul>
+      <li>
+        <a href="">SERVICES</a>
+        <ul class="dropdown">
+          <li><a href="">Software Trainings</a></li>
+          <li><a href="">Corporate Trainings</a></li>
+          <li><a href="">Internship</a></li>
+          <li><a href="">Placement Services</a></li>
+          <li><a href="">Software Development</a></li>
+          <li><a href="">Technical Work Support</a></li>
+          <li><a href="">wealth Management</a></li>
+        </ul>
+      </li>
+      
+    </ul>
+  </div>
+</body>
+
+</html>
